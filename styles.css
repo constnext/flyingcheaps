@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+
+
+header {
+    background-color: #FFD6BA; 
+    padding: 10px 0;
+    margin-bottom: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: 5px;
+    
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links select {
+    padding: 5px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Menu Icon */
+.nav-toggle {
+  display: none; 
+}
+
+.menu-icon {
+  display: none; 
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ff6600;
+  transition: all 0.3s ease; 
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex; 
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px; 
+    left: 0;
+    width: 100%;
+    background-color: #ff6600;
+    display: none; 
+    align-items: center;
+    padding: 40px ;
+  }
+
+  .nav-toggle:checked + .menu-icon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Top bar to X */
+  }
+
+  .nav-toggle:checked + .menu-icon .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+  }
+
+  .nav-toggle:checked + .menu-icon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Bottom bar to X */
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    display: flex; 
+  }
+
+  .nav-links ul {
+    flex-direction: column; 
+    width: 100%;
+  }
+
+  .nav-links ul li {
+    margin: 15px 0; 
+    width: 100%;
+    text-align: center; 
+  }
+
+
+}
+
