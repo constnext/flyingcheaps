@@ -449,3 +449,292 @@ button {
 
 }
 
+
+/* Special Insights section */
+.insights {
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insights h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: start;
+    margin: 30px;
+}
+
+.insights-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.insight {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.insight img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.insight h3 {
+    margin: 15px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.insight p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.insight .read-more {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e90ff;
+    margin-top: 10px;
+}
+
+/*   offers.  */
+
+.offers{
+    background-color:  #FFD6BA;
+    height: 18vh;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.airplane {
+    position: absolute;
+    width: 900px;
+    height: 420px;
+    background: url('../assets/airplane.png') no-repeat;
+    background-size: contain;
+    left: -150px; 
+    animation: flyAcross 12s linear infinite;
+}
+
+@keyframes flyAcross {
+    0% {
+        left: -200px;
+        transform: rotate(15deg); 
+    }
+    25% {
+        transform: rotate(-2deg); 
+    }
+    50% {
+        transform: rotate(-2deg); 
+    }
+    100% {
+        left: 110%;
+        transform: rotate(0deg); 
+    }
+}
+
+/* Media Query for Small Screens */
+
+@media (max-width: 768px) {
+    .airplane {
+        width: 550px;
+        height: 250px;
+        left: -70px;
+    }
+    
+    .offers {
+      background-color: #FFD6BA;
+      height: 29vh;
+      padding: 50px 0;
+      text-align: center;
+      border-radius: 15px;
+      margin: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    @keyframes flyAcross {
+        0% {
+            left: -120px;
+            transform: rotate(3deg);
+        }
+        100% {
+            left: 110%;
+            transform: rotate(1deg); 
+        }
+    }
+}
+
+
+
+/* faq */
+
+
+.faq-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.faq-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+details {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: start;
+    color: #777;
+}
+
+details summary {
+    font-size: 16px;
+    cursor: pointer;
+    color: #777;
+    font-weight: normal;
+}
+
+details summary:hover {
+    color: #ff6600;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Newsletter Signup section */
+.newsletter {
+  padding: 50px 0;
+   background-color: white;
+
+    text-align: center;
+    color: black;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #777;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+
+.newsletter button {
+    max-width: 85px;
+    padding: 10px 5px;
+    background-color: #ff6600;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e03e00;
+}
+
+/* Footer section */
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/*   support and help pages */
+
+#support, #help {
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    margin: 20px auto; 
+    border-radius: 8px;
+    max-width: 800px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.support h1, .help h1 {
+    margin: 50px 0 70px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.support h2, .help h2 {
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+    text-align: start;
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.support p, .help p {
+    font-family: 'Verdana', sans-serif; 
+    color: #555; 
+    line-height: 1.6; 
+    text-align: justify;
+    margin-bottom: 20px; 
+    font-size: 14px;
+}
+
+hr {
+    border: none; 
+    border-top: 2px solid #ccc; 
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+
+
