@@ -601,6 +601,52 @@ button {
 .faq-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+}
+
+details {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: start;
+    color: #777;
+}
+
+details summary {
+    font-size: 14px;
+    cursor: pointer;
+    color: #777;
+    font-weight: normal;
+}
+
+details summary:hover {
+    color: #ff6600;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/*  faq  small screen  */
+
+@media (max-width: 768px) { 
+  
+  .faq-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.faq-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
     font-size: 24px;
     color: #333;
 }
@@ -626,8 +672,12 @@ details summary:hover {
 
 details p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
+}
+
+  
+  
 }
 
 
